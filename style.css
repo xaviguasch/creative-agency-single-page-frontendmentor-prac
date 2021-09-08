@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
+
 *,
 *::before,
 *::after {
@@ -12,12 +13,10 @@
 /* ================== */
 
 :root {
-  --ff-main: 'Be Vietnam', sans-serif;
+  --ff-main: 'Commissioner', sans-serif;
 
-  --fw-light: 300;
   --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-bold: 700;
+  --fw-extra-bold: 800;
 
   --fs-07: 0.438rem;
   --fs-08: 0.5em;
@@ -45,38 +44,63 @@
   --fs-72: 4.5rem;
   --fs-80: 5rem;
 
-  /* Primary */
-
-  --clr-bright-red: hsl(12, 88%, 59%);
-  --clr-dark-blue: hsla(228, 39%, 23%, 1);
-  --clr-dark-blue-semi-transparent: hsla(228, 39%, 23%, 0.5);
-
-  /* Neutral  */
-
-  --clr-dark-grayish-blue: hsl(227, 12%, 61%);
-  --clr-very-dark-blue: hsl(233, 12%, 13%);
-  --clr-gray-asphalt: hsla(0, 0%, 55%, 1);
-  --clr-very-pale-red: hsl(13, 100%, 96%);
-  --clr-very-light-gray: hsl(0, 0%, 98%);
-  --clr-white-gray: hsla(9, 54%, 97%, 1);
-
+  --clr-red: hsla(0, 93%, 64%, 1);
   --clr-white: hsl(0, 0%, 100%);
-  --clr-black: hsla(228, 13%, 13%, 1);
-  --clr-black-bg: hsla(228, 13%, 13%, 0.1);
-  --clr-black-bg-2: hsla(228, 13%, 13%, 0.8);
+  --clr-black: hsla(240, 14%, 11%, 1);
+
+  --clr-text-black: hsla(0, 0%, 0%, 1);
 }
 
 body {
   background-color: var(--clr-white);
-  color: var(--clr-dark-blue-semi-transparent);
+  color: var(--clr-text-black);
   font-family: var(--ff-main);
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);
-  line-height: 1.5;
-  text-align: center;
+  line-height: 1.666;
+  text-align: left;
 }
 
 img {
   display: block;
   max-width: 100%;
 }
+
+/* ================== */
+/* Typography */
+/* ================== */
+
+.title {
+  font-size: var(--fs-40);
+  line-height: 1;
+  font-weight: var(--fw-extra-bold);
+}
+
+.title--md {
+  font-size: var(--fs-32);
+  line-height: 1.25;
+}
+
+.title--sm {
+  font-size: var(--fs-15);
+}
+
+.text {
+  font-size: var(--fs-15);
+}
+
+/* ================== */
+/* Links */
+/* ================== */
+
+/* ================== */
+/* Buttons & inputs */
+/* ================== */
+
+/* ================== */
+/* Utility styles */
+/* ================== */
+
+/* ================== */
+/* SECTIONS */
+/* ================== */
