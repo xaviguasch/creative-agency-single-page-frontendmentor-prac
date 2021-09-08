@@ -1,62 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Creative single page site</title>
-</head>
-<body>
-  About
-  Service
-  Projects
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
 
-  Schedule a call
+    <link rel="stylesheet" href="./style.css" />
 
-  Branding & website design agency
+    <title>Frontend Mentor | Creative single page site</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__row">
+          <div class="logo">
+            <img src="./assets/desktop/logo.svg" alt="creative logo" />
+          </div>
 
-  We specialize in visual storytelling by creating cohesive brand and website design 
-  solutions for small businesses, giving lasting impressions to audiences in a digital world.
+          <div class="buttons-area">
+            <button aria-label="Open navigation" class="open-nav-btn">
+              <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#000" fill-rule="evenodd" opacity=".5">
+                  <path d="M0 0h24v2H0zM0 8h24v2H0zM0 16h24v2H0z" />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-  Learn more
+        <nav class="nav">
+          <div class="header__row">
+            <div class="logo">
+              <img src="./assets/desktop/logo.svg" alt="creative logo" />
+            </div>
 
-  Design is strategic.
+            <div class="buttons-area">
+              <button aria-label="Close navigation" class="close-nav-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                  <g fill-rule="evenodd" opacity=".5">
+                    <path d="M2.222.808l16.97 16.97-1.414 1.414L.808 2.222z" />
+                    <path d="M.808 17.778L17.778.808l1.414 1.414-16.97 16.97z" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
 
-  A well-crafted design strategy consistently produces desired outcomes and brand awareness. 
-  We are firm believers that success lies in creative collaboration with our clients.
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link btn">Schedule a call</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-  Schedule a call
+      <main class="main">
+        <div class="hero">
+          <div class="hero__copy-area">
+            <div class="copy-text">
+              <h1 class="title">Branding & website design agency</h1>
+              <p class="text">
+                We specialize in visual storytelling by creating cohesive brand and
+                website design solutions for small businesses, giving lasting impressions
+                to audiences in a digital world.
+              </p>
 
-  Our approach for creating a winning brand
+              <a href="#" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="hero__image-area">
+            <img
+              src="./assets/mobile/image-hero.jpg"
+              alt="developers on their work stations"
+            />
+          </div>
+        </div>
 
-  01 Brand strategy
-  Brand strategy is critical for long-term success. Outshining competitors and capturing 
-  the target audience are key.
+        <div class="middle-first">
+          <div class="mf__grid">
+            <div class="mf__picture-area">
+              <img src="./assets/mobile/image-strategic.jpg" alt="work desktop" />
+            </div>
+            <div class="mf__copy-area">
+              <div class="copy-text">
+                <h2 class="title title--md">
+                  <span class="accent-color">Design </span>is strategic.
+                </h2>
+                <p class="text">
+                  "A well-crafted design strategy consistently produces desired outcomes
+                  and brand awareness. We are firm believers that success lies in creative
+                  collaboration with our clients."
+                </p>
+                <a href="#" class="btn btn--alt">Schedule a call</a>
+              </div>
+            </div>
+            <div class="list-area">
+              <h2 class="title title--md">Our approach for creating a winning brand</h2>
 
-  02 Brand design
-  Keeping the brand design unique and meaningful helps in communicating the brand’s timeless 
-  value effectively.
+              <ul class="principles-list">
+                <li class="principle">
+                  <div class="principle__title-area">
+                    <span class="principle__number">01</span>
+                    <h3 class="title title--sm">Brand strategy</h3>
+                  </div>
+                  <p class="text">
+                    Brand strategy is critical for long-term success. Outshining
+                    competitors and capturing the target audience are key.
+                  </p>
+                </li>
+                <li class="principle">
+                  <div class="principle__title-area">
+                    <span class="principle__number">02</span>
+                    <h3 class="title title--sm">Brand design</h3>
+                  </div>
+                  <p class="text">
+                    Brand design Keeping the brand design unique and meaningful helps in
+                    communicating the brand’s timeless value effectively.
+                  </p>
+                </li>
+                <li class="principle">
+                  <div class="principle__title-area">
+                    <span class="principle__number">03</span>
+                    <h3 class="title title--sm">Web design</h3>
+                  </div>
+                  <p class="text">
+                    A beautifully crafted website is the best tool for brand awareness,
+                    and ultimately results in increased revenues.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-  03 Web design
-  A beautifully crafted website is the best tool for brand awareness, and ultimately results 
-  in increased revenues.
+        <div class="middle-second">
+          <div class="slider-area-a">
+            <h2 class="title title--md">Brand naming & guidelines</h2>
+            <div class="slider-buttons">
+              <button class="btn btn--slider">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                  <g
+                    transform="matrix(-1 0 0 1 40 0)"
+                    stroke="#F94F4F"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <circle cx="20" cy="20" r="19.5" />
+                    <path stroke-width="2" d="M17.5 15l5 5-5 5" />
+                  </g>
+                </svg>
+              </button>
+              <button class="btn btn--slider">
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke="#F94F4F" fill="none" fill-rule="evenodd">
+                    <circle cx="20" cy="20" r="19.5" />
+                    <path stroke-width="2" d="M17.5 15l5 5-5 5" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="slider-area-b">
+            <div class="slide-container">
+              <div id="slide-1" class="slide">
+                <div class="image-container">
+                  <img
+                    class="slide-img"
+                    src="./assets/mobile/image-slide-1.jpg"
+                    alt="open book"
+                  />
+                </div>
+                <h3 class="title title--sm">Lean Product Roadmap</h3>
+                <p class="text">2019 project</p>
+              </div>
 
-  Brand naming & guidelines
-  Lean Product Roadmap 
-  2019 project
+              <div id="slide-2" class="slide">
+                <div class="image-container">
+                  <img
+                    class="slide-img"
+                    src="./assets/mobile/image-slide-2.jpg"
+                    alt="street bag"
+                  />
+                </div>
+                <h3 class="title title--sm">New Majestic Hotel</h3>
+                <p class="text">2018 project</p>
+              </div>
 
-  Brand identity & merchandise
-  New Majestic Hotel 
-  2018 Project
-  
-  Brand identity & web design
-  Crypto Dashboard
-  2016 Project
+              <div id="slide-3" class="slide">
+                <div class="image-container">
+                  <img
+                    class="slide-img"
+                    src="./assets/mobile/image-slide-3.jpg"
+                    alt="computer screen"
+                  />
+                </div>
+                <h3 class="title title--sm">Crypto Dashboard</h3>
+                <p class="text">2016 Project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-content">
+          <h2 class="title title--md">Let's build something great together.</h2>
+          <a href="#" class="btn"> Schedule a Call </a>
+        </div>
+      </footer>
+    </div>
 
-  Let's build something great together.
-
-  Schedule a Call
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>
