@@ -315,3 +315,12 @@ ul {
 
   text-align: right;
 }
+
+/* FOOTER */
+.footer {
+  padding: 6.25em 1.5em;
+}
+
+.footer-content .btn {
+  margin-top: 3em;
+}
