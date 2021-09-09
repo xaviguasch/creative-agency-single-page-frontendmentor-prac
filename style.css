@@ -223,6 +223,20 @@ ul {
   grid-template-columns: 1fr;
 }
 
+.mf__picture-area {
+  position: relative;
+}
+
+.svg-wave {
+  position: absolute;
+  bottom: -1em;
+  left: 1.5em;
+}
+
+.svg-wave img {
+  width: 63px;
+}
+
 .mf__copy-area {
   background: var(--clr-black);
   padding: 4.5em 1.5em;
