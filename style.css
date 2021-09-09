@@ -353,3 +353,91 @@ ul {
 .footer-content .btn {
   margin-top: 3em;
 }
+
+/* ================== */
+/* MEDIA QUERIES */
+/* ================== */
+
+@media (min-width: 428px) {
+  /* Limiting the width of the text lines for better readability */
+  .hero__copy-area .copy-text,
+  .mf__copy-area .text,
+  .principle,
+  .title--md {
+    max-width: 381px;
+  }
+}
+
+@media (min-width: 600px) {
+  /* Adding some extra padding on the sides */
+  .header__row,
+  .hero__copy-area {
+    padding: 0 2.4375em;
+  }
+
+  .mf__copy-area {
+    padding: 4.5em 2.4375em;
+  }
+
+  .list-area {
+    padding: 6em 2.4375em;
+  }
+
+  .slide__copy {
+    right: 2.4375em;
+  }
+
+  .slider-area-a {
+    padding: 4em 2.4375em;
+  }
+
+  .footer {
+    padding: 6.25em 2.4375em;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  /* Typography */
+  .title {
+    font-size: var(--fs-56);
+  }
+
+  /* SECTIONS */
+
+  .main {
+    margin-top: 0;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 4.8125em 0 9.375em 2.4375em;
+    gap: 0;
+
+    background: url('./assets/tablet/image-hero.jpg') no-repeat;
+    background-position: top right;
+  }
+
+  .hero__copy-area {
+    padding: 0;
+  }
+
+  .hero__copy-area .copy-text {
+    max-width: 400px;
+  }
+
+  .hero__copy-area .text {
+    margin-top: 1.75em;
+  }
+
+  .hero__copy-area .btn {
+    margin-top: 1.75em;
+  }
+
+  .hero__image-area {
+    display: none;
+  }
+}
