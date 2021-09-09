@@ -205,6 +205,11 @@ ul {
   order: -1;
 }
 
+.hero__image-area img {
+  width: 100%;
+  height: auto;
+}
+
 .hero__copy-area .text {
   margin-top: 1em;
 }
@@ -225,6 +230,11 @@ ul {
 
 .mf__picture-area {
   position: relative;
+}
+
+.mf__picture-area img {
+  width: 100%;
+  height: auto;
 }
 
 .svg-wave {
@@ -316,6 +326,11 @@ ul {
 
 .slide {
   display: none;
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
 }
 
 .slide.visible {
