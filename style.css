@@ -135,6 +135,21 @@ ul {
   background: transparent;
 }
 
+.btn--slider {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn--slider:hover,
+.btn--slider:focus {
+  background: transparent;
+}
+.btn--slider:hover svg g,
+.btn--slider:focus svg g {
+  stroke: var(--clr-red-difused);
+}
+
 /* ================== */
 /* Utility styles */
 /* ================== */
@@ -257,4 +272,46 @@ ul {
 
 .principle .text {
   margin-top: 1.2em;
+}
+
+/* Middle Second */
+.ms__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  color: var(--clr-white);
+}
+
+.slider-area-a {
+  background: var(--clr-black);
+
+  padding: 4em 1.5em;
+}
+
+.slider-buttons {
+  margin-top: 1.5em;
+}
+
+.slider-area-b {
+  order: -1;
+}
+
+.slide-container {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.visible {
+  display: block;
+}
+
+.slide__copy {
+  position: absolute;
+  bottom: 2.25em;
+  right: 2em;
+
+  text-align: right;
 }
