@@ -166,6 +166,10 @@ ul {
   padding-top: 0.25em;
 }
 
+.tablet-img {
+  display: none;
+}
+
 /* ================== */
 /* SECTIONS */
 /* ================== */
@@ -403,6 +407,23 @@ ul {
     font-size: var(--fs-56);
   }
 
+  .title--md {
+    font-size: var(--fs-32);
+  }
+
+  .title--sm {
+    font-size: var(--fs-15);
+  }
+
+  /* Utility classes */
+  .mobile-img {
+    display: none;
+  }
+
+  .tablet-img {
+    display: block;
+  }
+
   /* SECTIONS */
 
   .main {
@@ -439,5 +460,104 @@ ul {
 
   .hero__image-area {
     display: none;
+  }
+
+  /* Middle first */
+  .middle-first {
+    margin-top: 0;
+  }
+
+  .mf__grid {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  .mf__picture-area {
+    grid-column: 1 / 6;
+    grid-row: 1 / 6;
+  }
+
+  .svg-wave {
+    bottom: unset;
+    left: unset;
+    top: 145px;
+    right: -32px;
+  }
+
+  .mf__copy-area {
+    grid-column: 6/ -1;
+    grid-row: 1 / 5;
+
+    padding: 7.5em 2.5em 7.5em 4.3125em;
+  }
+
+  .list-area {
+    grid-column: 1/ -1;
+    grid-row: 5/ -1;
+
+    background: var(--clr-white);
+
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+
+  .list-area .title--md {
+    color: var(--clr-text-black);
+
+    grid-column: 1 /14;
+    grid-row: 3 / -1;
+
+    padding-left: 39px;
+    padding-top: 126px;
+    max-width: unset;
+  }
+
+  .principles-list {
+    background: var(--clr-red);
+    margin: 0;
+
+    grid-column: 14 / -1;
+    grid-row: 1 / -1;
+
+    z-index: 10;
+
+    padding: 100px 59px 0;
+  }
+
+  /* Middle Second */
+  .ms__grid {
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .slider-area-a {
+    grid-column: 1 /16;
+    grid-row: 1 /4;
+
+    z-index: 1;
+  }
+
+  .slider-area-b {
+    grid-column: 14 / -1;
+    grid-row: 1 / -1;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 4.375em 2.4375em;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-content .btn {
+    margin: unset;
+    line-height: 1;
   }
 }
