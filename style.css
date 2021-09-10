@@ -169,6 +169,9 @@ ul {
 .tablet-img {
   display: none;
 }
+.desktop-img {
+  display: none;
+}
 
 /* ================== */
 /* SECTIONS */
@@ -512,7 +515,7 @@ ul {
 
     padding-left: 39px;
     padding-top: 126px;
-    max-width: unset;
+    max-width: 400px;
   }
 
   .principles-list {
@@ -559,5 +562,48 @@ ul {
   .footer-content .btn {
     margin: unset;
     line-height: 1;
+  }
+}
+
+@media (min-width: 960px) {
+  /* Typography */
+  .title {
+    font-size: var(--fs-80);
+  }
+
+  .title--md {
+    font-size: var(--fs-56);
+  }
+
+  .title--sm {
+    font-size: var(--fs-20);
+  }
+
+  .text {
+    font-size: var(--fs-18);
+  }
+
+  /* Utility classes */
+  .tablet-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+  }
+
+  /* SECTIONS */
+
+  /* Hero */
+  .hero {
+    padding: 6em 4em 8em;
+
+    background: url(./assets/desktop/image-hero.jpg) no-repeat;
+    background-size: contain;
+    background-position: top right;
+  }
+
+  .hero__copy-area .copy-text {
+    max-width: 50%;
   }
 }
