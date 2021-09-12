@@ -246,6 +246,9 @@ ul {
 
 .svg-wave {
   position: absolute;
+}
+
+.svg-wave--1 {
   bottom: -1em;
   left: 1.5em;
 }
@@ -321,6 +324,10 @@ ul {
 
 .slider-buttons {
   margin-top: 1.5em;
+}
+
+.svg-wave--2 {
+  display: none;
 }
 
 .slider-area-b {
@@ -480,7 +487,7 @@ ul {
     grid-row: 1 / 6;
   }
 
-  .svg-wave {
+  .svg-wave--1 {
     bottom: unset;
     left: unset;
     top: 145px;
@@ -541,6 +548,15 @@ ul {
     grid-row: 1 /4;
 
     z-index: 1;
+
+    position: relative;
+  }
+
+  .svg-wave--2 {
+    display: block;
+
+    top: 27%;
+    right: -30px;
   }
 
   .slider-area-b {
