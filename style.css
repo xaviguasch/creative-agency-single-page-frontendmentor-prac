@@ -99,6 +99,17 @@ ul {
 /* Links */
 /* ================== */
 
+.nav-link:link {
+  color: var(--clr-white);
+  text-decoration: none;
+  font-size: var(--fs-18);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  font-weight: var(--fw-extra-bold);
+}
+
 /* ================== */
 /* Buttons & inputs */
 /* ================== */
@@ -185,14 +196,52 @@ ul {
   margin-top: 2.5em;
 }
 
-.open-nav-btn {
+.open-nav-btn,
+.close-nav-btn {
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 /* Nav */
 .nav {
-  display: none;
+  height: 100vh;
+
+  transform: translateY(0);
+
+  position: fixed;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 30;
+}
+
+.nav .header__row {
+  margin-top: unset;
+  background: var(--clr-white);
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.nav-list {
+  background: var(--clr-black);
+  margin: 0 1.625em 0 auto;
+  width: 67%;
+  padding: 2em 1.625em 1.75em;
+
+  display: flex;
+  flex-direction: column;
+
+  place-content: center;
+  gap: 1.5em;
+
+  text-align: center;
+}
+
+.nav-link.btn {
+  font-size: var(--fs-16);
 }
 
 /* MAIN */
@@ -440,10 +489,6 @@ ul {
   }
 
   /* SECTIONS */
-
-  .main {
-    margin-top: 0;
-  }
 
   /* Hero */
   .hero {
