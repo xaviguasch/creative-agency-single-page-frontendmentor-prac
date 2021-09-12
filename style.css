@@ -617,6 +617,10 @@ ul {
     display: block;
   }
 
+  .svg-wave img {
+    width: 90px;
+  }
+
   /* SECTIONS */
 
   /* Hero */
@@ -641,6 +645,11 @@ ul {
   .mf__picture-area img {
     object-fit: cover;
     height: 100%;
+  }
+
+  .svg-wave--1 {
+    top: 150px;
+    right: -40px;
   }
 
   .list-area .title--md {
@@ -671,6 +680,12 @@ ul {
   .slider-buttons {
     margin-top: 3.15em;
   }
+
+  .svg-wave--2 {
+    top: 160px;
+    right: -45px;
+  }
+
   .slider-area-b {
     grid-column: 13 / -1;
   }
@@ -687,4 +702,8 @@ ul {
   .footer-content .title--md {
     max-width: 600px;
   }
+}
+
+/* Laptop */
+@media (min-width: 1260px) {
 }
