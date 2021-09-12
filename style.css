@@ -324,6 +324,11 @@ ul {
 
 .slider-buttons {
   margin-top: 1.5em;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
 }
 
 .svg-wave--2 {
@@ -550,6 +555,10 @@ ul {
     z-index: 1;
 
     position: relative;
+  }
+
+  .slider-buttons {
+    margin-top: 2em;
   }
 
   .svg-wave--2 {
