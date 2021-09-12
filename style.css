@@ -706,4 +706,82 @@ ul {
 
 /* Laptop */
 @media (min-width: 1260px) {
+  /* Typography */
+
+  .title--md {
+    font-size: var(--fs-56);
+  }
+
+  .btn--alt {
+    font-size: var(--fs-18);
+  }
+
+  /* Utility classes */
+
+  .svg-wave img {
+    width: 132px;
+  }
+
+  /* SECTIONS */
+  /* Hero */
+  .hero {
+    padding: 7em 7em 9em;
+  }
+
+  .hero__copy-area .copy-text {
+    max-width: 55%;
+  }
+
+  /* Middle first */
+
+  .mf__copy-area {
+    padding: 10.5em 5.5em 10.5em 7em;
+  }
+
+  .mf__copy-area .text {
+    max-width: unset;
+  }
+
+  .svg-wave--1 {
+    top: 210px;
+    right: -70px;
+  }
+
+  .list-area .title--md {
+    padding: 0;
+
+    grid-column: 4 /16;
+    grid-row: 4 / -1;
+
+    max-width: unset;
+    z-index: 20;
+  }
+
+  .principles-list {
+    padding: 9.5em 5em 14.5em 12em;
+  }
+
+  /* Middle second */
+  .slider-area-a {
+    padding: 9.5em 4.5em 9.5em 8em;
+  }
+
+  .svg-wave--2 {
+    top: 190px;
+    right: -70px;
+  }
+
+  .slider-area-a .title--md {
+    max-width: unset;
+  }
+
+  .slide__copy {
+    right: 7em;
+    bottom: 4.25em;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 7.5em 7em 7.5em 8em;
+  }
 }
