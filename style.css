@@ -209,6 +209,7 @@ ul {
   height: 100vh;
 
   transform: translateY(0);
+  transition: transform 500ms;
 
   position: fixed;
   top: -100%;
@@ -217,6 +218,10 @@ ul {
   bottom: 0;
 
   z-index: 30;
+}
+
+.navigation-open {
+  transform: translateY(100%);
 }
 
 .nav .header__row {
