@@ -428,6 +428,10 @@ ul {
   margin-top: 3em;
 }
 
+.footer .svg-wave--3 {
+  display: none;
+}
+
 /* ================== */
 /* MEDIA QUERIES */
 /* ================== */
@@ -915,6 +919,16 @@ ul {
   /* Footer */
   .footer {
     padding: 7.5em 7em 7.5em 8em;
+
+    position: relative;
+  }
+
+  .footer .svg-wave--3 {
+    display: block;
+
+    position: absolute;
+    top: 43%;
+    left: -5%;
   }
 }
 
